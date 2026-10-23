@@ -1,0 +1,121 @@
+Idempotency Keys,		-- double charge trap
+Rate Limiting,
+Reverse Proxies,
+Connecting Pooling,
+N+1 Queries,			-- silent DB killer
+Caching Strategies,
+Cache Invalidation,
+Load Balancing,
+API Gateways,
+Timeouts,
+Retries,
+Exponential Backoff,
+Circuit Breakers,		-- stop cascading fails
+Race Conditions,
+DeadLocks,
+Memory Leaks,
+Webhooks,
+CORS,
+Secret Management,
+
+Database Indexing	-- Scan vs seek
+Query Optimization
+Read Replicas
+Database Migrations
+Schema versioning
+Optimistic Locking
+Pessimistic Locking
+Distributed Locks
+Sharding
+Partitioning
+Replication
+Leader Election
+CAP Theorem			-- pick two
+Eventual Consistency
+Distributed Transactions
+Saga Pattern
+Message Queues
+Pub/Sub
+Event-Driven Architecture
+Dead Letter Queues 		--poison msgs
+Backpressure
+Cron Jobs
+
+SQL Injection			--Bobby Tables
+XSS
+CSRG
+SSRF
+OAuth
+JWT Rotation			--stolen tokens
+IAM
+TLS
+Encryption at Rest
+Encryption in Transit
+WAF
+DDoS Protection
+WebSockets
+Server-Sent Events
+Long Polling
+gRPC
+HTTP/2 & HTTP/3
+TCP vs UDP
+DNS				
+Docker
+Kubernetes				--YAML boss fight
+Helm Charts
+Service Discovery
+CI/CD
+Build Caching
+Infrastucture as Code
+Terraform
+Feature Flags
+Blue-Green Deployment
+Canary Releases			-- test on 1%
+Rolling Deployments
+Rollbacks
+Health Checks
+Liveness & Readiness Probes
+Dependency Hell
+API Versioning
+Semantic Versioning
+Garbage Collection
+Thread Safety
+Autoscaling
+Horizontal Scaling
+Vertical Scaling
+CDN
+Edge Caching
+Cost Optimization		-- cloud bill shock
+Cold Starts
+Serverless Limits
+Latency
+Throughput
+p99 Latency
+Tail Latency
+Network Partitions
+Clock Skew
+Multi-Region Deployment
+Failover
+Backups
+Disaster Recovery
+Chaos Engineering
+Logging
+Monitoring
+Distributed Tracing		-- follow request Id
+Metrics
+Alerts
+Observability
+SLIs
+SLOs
+Error Budgets			--velocity vs stability
+Production Incidents
+On-Call					-- 3:13 AM Pager
+Postmortems
+
+
+
+
+To keep Production Alive.....
+
+
+

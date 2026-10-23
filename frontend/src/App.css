@@ -1,0 +1,253 @@
+
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #202a24;
+  background: #f5f7f4;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button, input, textarea {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 10px;
+  padding: 11px 16px;
+  background: #176b46;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: wait;
+}
+
+button.secondary {
+  background: #e7eee8;
+  color: #204c36;
+}
+
+.app {
+  width: min(1050px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 28px 0 50px;
+}
+
+.topbar, .section-heading, .user-menu, .cart-row, .total-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.topbar {
+  margin-bottom: 28px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #dce4dc;
+}
+
+h1, h2, p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 4px;
+  color: #176b46;
+}
+
+.topbar p, .section-heading p, .menu-item p {
+  color: #66736a;
+  margin-bottom: 0;
+}
+
+.section, .panel {
+  margin: 22px 0;
+}
+
+.panel {
+  padding: 22px;
+  background: white;
+  border: 1px solid #e1e8e1;
+  border-radius: 16px;
+}
+
+.auth-panel {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form, label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+form {
+  gap: 16px;
+}
+
+input, textarea {
+  width: 100%;
+  border: 1px solid #d4ddd5;
+  border-radius: 9px;
+  padding: 12px;
+  background: white;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.switch-mode {
+  margin: 18px 0 0;
+  color: #66736a;
+}
+
+.text-button {
+  padding: 0;
+  background: transparent;
+  color: #176b46;
+}
+
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.restaurant-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 18px;
+  border: 1px solid #e1e8e1;
+  background: white;
+  color: #202a24;
+  text-align: left;
+}
+
+.restaurant-card.selected {
+  border: 2px solid #176b46;
+}
+
+.restaurant-card span:not(.restaurant-icon),
+.restaurant-card small {
+  color: #66736a;
+}
+
+.restaurant-icon {
+  font-size: 25px;
+}
+
+.menu-list {
+  display: grid;
+  gap: 10px;
+}
+
+.menu-item, .order-card {
+  padding: 16px;
+  background: white;
+  border: 1px solid #e1e8e1;
+  border-radius: 12px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.menu-item p {
+  margin: 6px 0;
+}
+
+.price {
+  color: #176b46;
+  font-weight: 700;
+}
+
+.cart-row {
+  padding: 13px 0;
+  border-bottom: 1px solid #e8ece8;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.total-row {
+  padding-top: 12px;
+}
+
+.grand-total {
+  padding: 16px 0;
+  margin-bottom: 12px;
+  border-top: 1px solid #dce4dc;
+  font-size: 1.1rem;
+}
+
+.order-card {
+  margin: 12px 0;
+}
+
+.status {
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #e7eee8;
+  color: #204c36;
+  text-transform: capitalize;
+}
+
+.notice {
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+
+.notice.error {
+  background: #fff0ee;
+  color: #9b2920;
+}
+
+.notice.success {
+  background: #e7f5e9;
+  color: #205e35;
+}
+
+footer {
+  margin-top: 36px;
+  text-align: center;
+  color: #7a857d;
+}
+
+@media (max-width: 600px) {
+  .topbar, .section-heading {
+    align-items: flex-start;
+  }
+
+  .topbar, .menu-item {
+    flex-direction: column;
+  }
+
+  .cart-row {
+    flex-wrap: wrap;
+  }
+}
